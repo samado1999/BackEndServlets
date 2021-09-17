@@ -9,7 +9,7 @@
 	<div class="header">
 		<h2>Tienda Genérica</h2>
 	</div>
-	
+
 	<ul>
 		<li><a class="active" href="Usuarios.html">Usuarios</a></li>
 		<li><a href="#Clientes">Clientes</a></li>
@@ -19,43 +19,42 @@
 		<li><a href="#Reportes">Reportes</a></li>
 	</ul>
 	<div class="form">
-		<form>
-			<div class="information">
-				<div class="cedula">
-					<label> Cédula </label> <input type="number" name="identification"
-						id="txtIdentification" placeholder="Identification " size="15"
-						required />
-				</div>
-				<div class="name">
-					<label> Nombre Completo: </label> <input type="text"
-						name="fullname" id="txtFullname" placeholder="Full Name" size="15"
-						required />
-				</div>
-				<div class="email">
-					<label> Correo Electrónico: </label> <input type="text"
-						name="email" id="txtEmail" placeholder="Email" size="15" required />
-				</div>
+		<div class="information">
+			<div class="cedula">
+				<label> Cédula </label> <input type="number" name="identification"
+					id="txtIdentification" placeholder="Identification " size="15"
+					required />
 			</div>
-			<div class="user">
-				<div class="user-text">
-					<label> Usuario: </label> <input type="text" name="username"
-						id="txtUsername" placeholder="Username" size="15" required />
-				</div>
-				<div class="pasword">
-					<label> Contraseña: </label> <input type="password" name="password"
-						id="txtPassword" placeholder="Middlename" size="15" required />
-				</div>
+			<div class="name">
+				<label> Nombre Completo: </label> <input type="text" name="fullname"
+					id="txtFullname" placeholder="Full Name" size="15" required />
 			</div>
-		</form>
+			<div class="email">
+				<label> Correo Electrónico: </label> <input type="text" name="email"
+					id="txtEmail" placeholder="Email" size="15" required />
+			</div>
+		</div>
+		<div class="user">
+			<div class="user-text">
+				<label> Usuario: </label> <input type="text" name="username"
+					id="txtUsername" placeholder="Username" size="15" required />
+			</div>
+			<div class="pasword">
+				<label> Contraseña: </label> <input type="password" name="password"
+					id="txtPassword" placeholder="Middlename" size="15" required />
+			</div>
+		</div>
 	</div>
-	
+
 	<div class="button">
 		<div>
 			<button class="registerbtn">Consultar</button>
 		</div>
 		<div>
-			<input type="button" class="registerbtn" onclick="postUser()"
-				value="Crear" />
+			<form action="/TiendaVirtualPrototipo1/SrvRegistroUsuario"
+				method="post">
+				<button type="submit">Crear</button>
+			</form>
 		</div>
 		<div>
 			<button class="registerbtn">Actualizar</button>
