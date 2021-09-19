@@ -5,8 +5,8 @@ import java.sql.*;
 public class DBConnection {
 	private final String db = "tiendagenerica";
 	private final String user = "root";
-	private final String password = "Mapache 777*";
-	private final String url = "jdbc:mysql://localhost:3308/" + db
+	private final String password = "admin";
+	private final String url = "jdbc:mysql://localhost:3306/" + db
 			+ "?zeroDateTimeBehavior=convertToNull&serverTimezone=UTC";
 
 	private Connection con;
