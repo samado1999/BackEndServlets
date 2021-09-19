@@ -37,6 +37,8 @@ public class SrvRegistroUsuario extends HttpServlet {
 		// TODO Auto-generated method stub
 		// response.getWriter().append("Served at: ").append(request.getContextPath());
 
+		System.out.println("MENSAJE DESDE LA CLONACIÓN PARA SUBIR A GITHUB");
+		
 		userDTO = new Usuario();
 		userDTO.setUsuario(request.getParameter("txtUser"));
 		userDTO.setPassword(request.getParameter("txtPass"));
